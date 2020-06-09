@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdviceFragment">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/semiround_toolbar">
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="عنوان دستور"
+                    android:background="@drawable/round_whitefill_bluestroke"
+                    android:textSize="30sp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:maxLines="1"
+                    android:fontFamily="@font/irsans"
+                    android:padding="10dp"
+                    android:id="@+id/intitleedt"/>
+                <EditText
+                    android:id="@+id/intargetedt"
+                    android:layout_below="@id/intitleedt"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="30sp"
+                    android:padding="10dp"
+                    android:fontFamily="@font/irsans"
+                    android:background="@drawable/round_whitefill_bluestroke"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="نام کاربری بیمار"/>
+                    <EditText
+                        android:id="@+id/indataedt"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_below="@id/intargetedt"
+                        android:hint="متن"
+                        android:fontFamily="@font/irsans"
+                        android:background="@drawable/round_whitefill_bluestroke"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="20dp"
+                        android:inputType="textMultiLine"
+                        android:isScrollContainer="true"
+                        android:maxLines="10"
+                        android:padding="10dp"
+                        android:textSize="30sp"/>
+                    <EditText
+                        android:id="@+id/indateedt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/indataedt"
+                        android:layout_marginTop="20dp"
+                        android:hint="تاریخ"
+                        android:fontFamily="@font/irsans"
+                        android:background="@drawable/round_whitefill_bluestroke"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="30sp"
+                        android:padding="10dp"
+                        android:layout_marginBottom="10dp"/>
+
+
+
+
+            <Button
+                android:id="@+id/insendbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/indataedt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="ارسال"
+                android:fontFamily="@font/irsans"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/round_bluefill"
+                android:textSize="20sp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</FrameLayout>
