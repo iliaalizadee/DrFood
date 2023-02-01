@@ -1,2 +1,2 @@
-# Dr-food
-Management version of Foodipe
+# Dr-Food
+Foodipe, but for doctors
